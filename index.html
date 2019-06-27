@@ -1,35 +1,293 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html lang="en-us">
+
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Word Guess Game</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+  <meta charset="UTF-8">
+  <title>About | Allan Pearson</title>
+  <style>
+
+  body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 34px;
+  color: #777;
+  background: url("../images/concrete_seamless.png");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  height: auto !important;
+  height: 100%;
+  min-height: 100%;
+  margin: 0 auto -105px;
+}
+
+footer,
+.push {
+  height: 105px;
+}
+
+
+
+#logo:hover,
+input[type=submit]:hover {
+  background: #5e7f7e;
+}
+
+nav a:hover {
+  color: #5e7f7e;
+}
+
+.social:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+
+
+.container {
+  width: 100%;
+  max-width: 960x;
+  margin: 0 auto;
+  clear: both;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 20px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  color: #4aaaa5;
+}
+
+h1 {
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 49px;
+  border-bottom: 3px solid #ddd;
+}
+
+h2,
+h3 {
+  font-size: 22px;
+}
+
+
+
+#masthead {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  margin: 0 0 30px;
+  overflow: auto;
+  color: #fff;
+  background: #fff;
+  border-bottom: 2px solid #ccc;
+}
+
+#logo {
+  float: left;
+  width: 250px;
+  height: 90px;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 90px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  background: #4aaaa5;
+}
+
+nav {
+  float: right;
+  margin-top: 25px;
+}
+
+nav a {
+  display: inline-block;
+  padding-left: 15px;
+  margin-left: 15px;
+  line-height: 18px;
+  color: #999;
+  text-decoration: none;
+  border-left: 1px solid #efefef;
+}
+
+nav a:first-child {
+  border-left: 0 none;
+}
+
+
+
+footer {
+  padding: 30px 0;
+  clear: both;
+  font-size: 12px;
+  color: #fff;
+  color: #ccc;
+  text-align: center;
+  background: #666;
+  border-top: 8px solid #4aaaa5;
+}
+
+
+
+.sidebar {
+  float: right;
+  width: 100%;
+  max-width: 270px;
+  padding: 30px;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+h3,
+.sidebar h2 {
+  padding-bottom: 20px;
+  margin-bottom: 15px;
+  line-height: 22px;
+  border-bottom: 2px solid #eee;
+}
+
+.social {
+  width: 62px;
+  height: 62px;
+  margin-top: 8px;
+  margin-right: 5px;
+}
+
+.social:last-child {
+  margin-right: 0;
+}
+
+
+
+#main-container {
+  padding-top: 130px;
+}
+
+.main-section {
+  float: left;
+  width: 100%;
+  max-width: 650px;
+  padding: 30px;
+  margin: 0 0 40px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+
+
+#contact-form ul {
+  margin-bottom: 20px;
+}
+
+#contact-form li {
+  margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 100%;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  padding: 10px 30px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
+}
+
+
+ 
+
+  </style>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
-    <div class="wrapper">
-        <h1>Word Guess Game</h1>
-        <p>Pick a word below to guess the right answer, or click hint for a clue.</p>
-        </div>
-        <div id="wrapper">
-            <div id="buttons">
-                <ul id="word">...</ul>
-            </div>
-        </div>
-    </div>
-    <p id="Blockchain Names">What Blockchain names could it be?</p>
-    <div class ="hold">
-        <ul id="names">...</ul>
-    </div>
-    <p id= "Token">Buy some today!</p>
-    <p id="Hint">Hint!</p>
+
+  <header id="masthead">
     <div class="container">
-        <button id="Hint!">Hint</button>
-        <button id="reset">Try Again</button>
+      <a href="index.html" id="logo">Word Guess Game</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-    <!--Make sure this links right-->
-    <script src="js/index.js"></script>
+  </header>
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Pick </h1>
+
+      <img src="assets/images/concrete_seamless.jpg" class="auth-image" alt="concrete_seamless">
+
+      <p>I’m 41 years old married male with a cat and a dog. 
+    Currently managing Ladies Shoes at Nordstrom in Chicago IL on Michigan Ave. 
+    I consider myself as a big nerd. </p>
+
+      <p>Some of my hobbies include bodyboarding, building projects, collecting coins, cooking, 
+          dancing, digital currency, hiking, magnet fishing, 
+          metal detecting, mining for gold, and outdoor activities.</p>
+
+      <p>I’m currently attending a coding boot camp at North Western University. 
+          In the hopes that I may be able to learn a new skill to advance myself in my current career. 
+          This is one of the most challenging experiences I have subjected my learning abilities to understand.   
+          I look forward to seeing my life changing journey unfold over the next 6 months.</p>
+
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      Word Guess Game; 
+    </div>
+  </footer>
 </body>
+
 </html>
