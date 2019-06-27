@@ -1,0 +1,19 @@
+/* Variables */
+/* Mixins */
+Body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align:center;
+  font-size: 18px;
+  line-height: 100%;
+  background: #666666;
+}
+.wrapper {width: 100%;
+    margin:0 auto;
+}
+.wrapper: after { 
+    content: "";
+    display: table;
+    clear: both;
+
+}
+canvas
