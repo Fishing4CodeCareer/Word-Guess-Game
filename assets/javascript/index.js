@@ -53,7 +53,7 @@ function printKeyPressed(letter) {
 
 function resetGuesses() {
     guessesLeft = defaultGuessesLeft;
-    displayOnScreen("guessesLeft", "Losses; ${String(guessesLeft)}");
+    displayOnScreen("guessesLeft", "Losses: ${String(guessesLeft)}");
     displayOnScreen("guessessofar", "Your Guesses so far: ");
 }
 
