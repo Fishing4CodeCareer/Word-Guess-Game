@@ -1,7 +1,12 @@
-window.onload = function () {
 
-    var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", 
-                    "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", 
-                    "w", "x", "y", "z"];
+    var alphabet = ["i", "b", "c", "o", "n", "t", "i"]
+, randomLetter = ""
+, winCount = 0
+, lossCount = 0
+, guessesLeft = 0
+, guessedLetters = []
+, defaultGuessesLeft =7;
+window.addEventListener("keypress", onKeyPress, false); newGame();
+
                     
-}
+
