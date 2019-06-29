@@ -19,14 +19,14 @@ function newGame() {
     displayOnScreen("Guessesleft", "Guesses Left: ${String(guessesLeft)}");
 }
 function onKeyPress(key) {
-    letter - key.key.tolowerCase();
-    if (letters.includes(letter, 0) && quessedLetters.includes(letter, 0) ===false){
+    letter = key.key.tolowerCase();
+    if (letters.includes(letter, 0) && guessedLetters.includes(letter, 0) ===false){
         guessedLetters.push(letter);
         printKeyPressed(letter);
         guessesLeft--;
         displayOnScreen("guessesleft",  "Guesses Left: ${String(guessesLeft)}");
-     if (String(letter) ==String(randomLetter)){
-         winCouint++;
+     if (String(letter) ==String(randomLetter)) {
+         winCount++;
          displayOnScreen("wins", "wins: ${String(winCount)}");
         newGame();
      }
@@ -48,7 +48,7 @@ function printKeyPressed(letter) {
     if (guessesLeft ==7) {
     document.getElementById("guessessofar").innerHTML +=letter;
    }  else {
-       document.getElementById("guessessofar").innerHTML +="," +letter;
+       document.getElementById("guessessofar").innerHTML += ", " + letter;
    }
 }
 
@@ -58,7 +58,7 @@ function resetGuesses() {
     displayOnScreen("guessessofar", "Your Guesses so far: ");
 }
 
-function displayonScreen(divContainer, content){
-     document.getElementById(divContainer). innerHTML = content;
+function displayOnScreen(divContainer, content) {
+    document.getElementById(divContainer). innerHTML = content;
     
 }
