@@ -19,7 +19,8 @@ function newGame() {
     displayOnScreen("guessesleft", "Guesses Left: " + guessesLeft);
 }
 function onKeyPress(key) {
-    letter = key.key.tolowerCase();
+    letter = key.key.toLowerCase();
+
     if (letters.includes(letter, 0) && guessedLetters.includes(letter, 0) === false) {
         guessedLetters.push(letter);
         printKeyPressed(letter);
