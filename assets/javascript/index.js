@@ -15,7 +15,7 @@ function newGame(){
     generateRandowLetter();
     displayOnScreen("wins", "wins: ${String(wincount)}");
     displayOnScreen("losses", "losses: ${String(lossCount)}");
-    displayOnScreen("Guessesleft", "Guesses Left: ${String(guessesLeft)}");
+    displayOnScreen("guessesleft", "guesses Left: ${String(guessesLeft)}");
 }
 function onKeyPress(key) {
     letter - key.key.tolowerCase();
