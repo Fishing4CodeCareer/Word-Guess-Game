@@ -13,7 +13,7 @@ function newGame() {
     guessedLetters = [];
     resetGuesses();
     generateRandomLetter();
-    console.log(randomLetter);
+    console.log(randomLetter); // Turn on to see randomLetter in
     displayOnScreen("wins", "wins: ${String(wincount)}");
     displayOnScreen("losses", "losses: ${String(lossCount)}");
     displayOnScreen("guessesleft", "guesses Left: ${String(guessesLeft)}");
