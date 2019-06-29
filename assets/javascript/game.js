@@ -1,4 +1,4 @@
-var letters = ["i", "b", "c", "o", "n", "t", "i"]
+var letters = ["i", "b", "c", "o", "n", "t", "i", "y", "w", "x", "m", "q","l", "z"]
     , randomLetter = ""
     , winCount = 0
     , lossCount = 0
