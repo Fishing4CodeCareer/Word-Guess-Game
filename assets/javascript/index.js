@@ -1,4 +1,4 @@
-    var letters = ["i", "b", "c", "o", "n", "t", "i"]
+var letters = ["i", "b", "c", "o", "n", "t", "i"]
 , randomLetter = ""
 , winCount = 0
 , lossCount = 0
@@ -31,9 +31,26 @@ function onKeyPress(key) {
         lossCount++;
         displayOnScreen("losses", "Losses: ${String(lossCount)}");
         newGame();
-    }
-     }   
+      }
+    }   
+
+
 
 }
 
-        
+function generateRandomLetter(){
+    randomLetter = letters[Math.floor(Math.random() * letters.length)];
+function printKeyPressed(letter) {
+    if (guessesLeft ==7) {
+    document.getElementById("guessessofar").innerHTML +=letter;
+   }  else {
+       document.getElementById("guessessofar").innerHTML +="," +letter;
+   }
+}
+
+function resetGuesses() {
+    guessesLeft = defaultGuessesLeft;
+    displayOnScreen("guessesLeft", "Losses; ${String(guessesLeft)}");
+    displayOnScreen("guessessofar", "Your Guesses so far: ");
+}
+
