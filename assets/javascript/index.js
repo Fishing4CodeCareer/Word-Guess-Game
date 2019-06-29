@@ -54,3 +54,7 @@ function resetGuesses() {
     displayOnScreen("guessessofar", "Your Guesses so far: ");
 }
 
+function displayonScreen(divContainer, content){
+     document.getElementById(divContainer). innerHTML = content;
+    
+}
