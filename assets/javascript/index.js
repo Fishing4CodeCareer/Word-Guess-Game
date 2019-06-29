@@ -5,7 +5,9 @@ var letters = ["i", "b", "c", "o", "n", "t", "i"]
 , guessesLeft = 0
 , guessedLetters = []
 , defaultGuessesLeft =7;
-window.addEventListener("keypress", onKeyPress, false); newGame();
+
+window.addEventListener("keypress", onKeyPress, false);
+newGame();
 
 function newGame(){
     guessedLetters = [];
@@ -40,6 +42,7 @@ function onKeyPress(key) {
 
 function generateRandomLetter(){
     randomLetter = letters[Math.floor(Math.random() * letters.length)];
+}
 function printKeyPressed(letter) {
     if (guessesLeft ==7) {
     document.getElementById("guessessofar").innerHTML +=letter;
