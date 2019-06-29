@@ -4,15 +4,16 @@ var letters = ["i", "b", "c", "o", "n", "t", "i"]
 , lossCount = 0
 , guessesLeft = 0
 , guessedLetters = []
-, defaultGuessesLeft =7;
+, defaultGuessesLeft = 7;
 
 window.addEventListener("keypress", onKeyPress, false);
 newGame();
 
-function newGame(){
+function newGame() {
     guessedLetters = [];
     resetGuesses();
-    generateRandowLetter();
+    generateRandomLetter();
+    console.log(randomLetter();
     displayOnScreen("wins", "wins: ${String(wincount)}");
     displayOnScreen("losses", "losses: ${String(lossCount)}");
     displayOnScreen("Guessesleft", "Guesses Left: ${String(guessesLeft)}");
